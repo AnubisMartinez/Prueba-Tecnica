@@ -1,0 +1,167 @@
+<div class="container">
+  <div class="row">
+
+    <div class="col-8" style="margin:  auto;">
+      <div class="card" >
+        <div class="card-header">
+          <h3>Agregar Cliente</h3>
+        </div>
+        <div class="card-body">
+          <form action="">
+            <div class="form-group">
+              <label for="">Correo:</label>
+              <input  [(ngModel)]="tcsClienteEnca.correo" name="correo" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Nombres:</label>
+              <input [(ngModel)]="tcsClienteEnca.nombre" name="nombre" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Apellidos:</label>
+              <input [(ngModel)]="tcsClienteEnca.apellido" name="apellido" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">Telefono:</label>
+              <input  [(ngModel)]="tcsClienteEnca.telefono" name="telefono" type="text" class="form-control">
+            </div>
+  
+            <button (click)="Guardar();" class="btn btn-success">Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <hr class="bg-gray-500"/>
+
+    <div class="row">
+      <div class="col-5">
+        <div class="card" >
+          <div class="card-header">
+            <h3>Agregar Documento</h3>
+          </div>
+          <div class="card-body">
+            <form action="">
+              <div class="form-group">
+                <label for="">Nombre:</label>
+                <input  [(ngModel)]="tcsClienteEnca.correo" name="correo" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Numero:</label>
+                <input [(ngModel)]="tcsClienteEnca.nombre" name="nombre" type="text" class="form-control">
+              </div>
+    
+              <button (click)="Guardar();" class="btn btn-success">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-7">
+        <div class="card">
+          <div class="card-header">
+              <h4>
+                  Lista de Documentos
+              </h4>
+          </div>
+          <div class="card-body">
+              <table class="table table-hover" >
+                  <thead>
+                      <tr class="text-center">
+                          <th>NOMBRE</th>
+                          <th>NUMERO</th>
+                          <th>ACCIONES</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr  class="text-center">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+
+  
+                          <td>
+                              <button  class="btn btn-warning">Editar</button>
+                              <button  class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                          </td>
+                      </tr> 
+                  </tbody>
+              </table>
+
+          </div>
+ 
+      </div>
+      </div>
+    </div>
+
+
+    <hr class="bg-gray-500"/>
+
+    <div class="row">
+      <div class="col-5">
+        <div class="card" >
+          <div class="card-header">
+            <h3>Agregar Direción</h3>
+          </div>
+          <div class="card-body">
+            <form action="">
+              <div class="form-group">
+                <label for="">Departamento:</label>
+                <input  [(ngModel)]="tcsClienteEnca.correo" name="correo" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="">Municipio</label>
+                <input [(ngModel)]="tcsClienteEnca.nombre" name="nombre" type="text" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="">Dirección</label>
+                <input [(ngModel)]="tcsClienteEnca.nombre" name="nombre" type="text" class="form-control">
+              </div>
+    
+              <button (click)="Guardar();" class="btn btn-success">Guardar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-7">
+        <div class="card">
+          <div class="card-header">
+              <h4>
+                  Lista de Dirección
+              </h4>
+          </div>
+          <div class="card-body">
+              <table class="table table-hover" >
+                  <thead>
+                      <tr class="text-center">
+                          <th>DEPARTAMENTO</th>
+                          <th>MUNICIPIO</th>
+                          <th>DIRECCION</th>
+                          <th>ACCIONES</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr  class="text-center">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+
+  
+                          <td>
+                              <button  class="btn btn-warning">Editar</button>
+                              <button  class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                          </td>
+                      </tr> 
+                  </tbody>
+              </table>
+
+          </div>
+ 
+      </div>
+      </div>
+    </div>
+  </div>
